@@ -1,0 +1,398 @@
+// Center block
+@mixin center-block {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+/*===============================
+=            FADE IN            =
+===============================*/
+
+@-webkit-keyframes fadeIn {
+	from{
+		opacity:0;
+	}
+	to{
+		opacity:1;
+	}
+}
+
+@keyframes fadeIn {
+	from{
+		opacity:0;
+	}
+	to{
+		opacity:1;
+	}
+}
+
+@-webkit-keyframes fadeInOut {
+	from{
+		opacity:0;
+	}
+	50%{
+		opacity:1;
+	}
+	to{
+		opacity:1;
+	}
+}
+
+@keyframes fadeInOut {
+	from{
+		opacity:0;
+	}
+	50%{
+		opacity:1;
+	}
+	to{
+		opacity:0;
+	}
+}
+
+/*====================================
+=            ZOOM IN DOWN            =
+====================================*/
+
+
+@-webkit-keyframes zoomInDown {
+	from {
+		opacity:0;
+		-webkit-transform:scale3d(.1, .1, .1) translate3d(0, -1000px, 0);
+		transform:scale3d(.1, .1, .1) translate3d(0,-1000px,0);
+		-webkit-animation-timing-function:cubic-bezier(0.550,0.055,0.675,0.190);
+		animation-timing-function:cubic-bezier(0.550,0.055,0.675,0.190)
+	}
+	60%{
+		opacity:1;
+		-webkit-transform:scale3d(.475, .475, .475) translate3d(0, 60px, 0);
+		transform:scale3d(.475, .475, .475) translate3d(0, 60px, 0);
+		-webkit-animation-timing-function:cubic-bezier(0.175, 0.885, 0.320, 1);
+		animation-timing-function:cubic-bezier(0.175, 0.885, 0.320, 1)
+	}
+}
+
+@keyframes zoomInDown{
+	from{
+		opacity:0;
+		-webkit-transform: scale3d(.1, .1, .1) translate3d(0, -1000px, 0);
+		transform: scale3d(.1, .1, .1) translate3d(0,-1000px,0);
+		-webkit-animation-timing-function: cubic-bezier(0.550,0.055,0.675,0.190);
+		animation-timing-function: cubic-bezier(0.550,0.055,0.675,0.190)
+	}
+	60% {
+		opacity:1;
+		-webkit-transform: scale3d(.475, .475, .475) translate3d(0, 60px, 0);
+		transform: scale3d(.475, .475, .475) translate3d(0,60px,0);
+		-webkit-animation-timing-function: cubic-bezier(0.175,0.885,0.320,1);
+		animation-timing-function: cubic-bezier(0.175,0.885,0.320,1)
+	}
+}
+
+/*===============================
+=            FLICKER            =
+===============================*/
+
+@-webkit-keyframes flicker {
+	from {
+		opacity: 1;
+	}
+	4% {
+		opacity: 0.2;
+	}
+	6% {
+		opacity: 0.1;
+	}
+	8% {
+		opacity: 0.5;
+	}
+	10% {
+		opacity: 1;
+	}
+	11% {
+		opacity: 1;
+	}
+	12% {
+		opacity: 0.65;
+	}
+	14% {
+		opacity: 0.55;
+	}
+	16% {
+		opacity: 0.1;
+	}
+	17% {
+		opacity: 0.6;
+	}
+	19% {
+		opacity: 0.5;
+	}
+	20% {
+		opacity: 0.5;
+	}
+	24% {
+		opacity: 0.2;
+	}
+	26% {
+		opacity: 0.3;
+	}
+	28% {
+		opacity: 0.3;
+	}
+	38% {
+		opacity: 1;
+	}
+	40% {
+		opacity: 1;
+	}
+	42% {
+		opacity: 1;
+	}
+	44% {
+		opacity: 0.5;
+	}
+	46% {
+		opacity: 0.5;
+	}
+	56% {
+		opacity: 0.5;
+	}
+	58% {
+		opacity: 0.75;
+	}
+	60% {
+		opacity: 0.5;
+	}
+	68% {
+		opacity: 0.1;
+	}
+	70% {
+		opacity: 1; /*peak*/
+	}
+	72% {
+		opacity: 1;
+	}
+	93% {
+		opacity: 0.5;
+	}
+	95% {
+		opacity: 1; /*peak*/
+	}
+	97% {
+		opacity: 0.5;
+	}
+	to {
+		opacity: 0.6;
+	}
+}
+
+@keyframes flicker {
+	from {
+		opacity: 1;
+	}
+	4% {
+		opacity: 0.2;
+	}
+	6% {
+		opacity: 0.1;
+	}
+	8% {
+		opacity: 0.5;
+	}
+	10% {
+		opacity: 1;
+	}
+	11% {
+		opacity: 1;
+	}
+	12% {
+		opacity: 0.65;
+	}
+	14% {
+		opacity: 0.55;
+	}
+	16% {
+		opacity: 0.1;
+	}
+	17% {
+		opacity: 0.6;
+	}
+	19% {
+		opacity: 0.5;
+	}
+	20% {
+		opacity: 0.5;
+	}
+	24% {
+		opacity: 0.2;
+	}
+	26% {
+		opacity: 0.3;
+	}
+	28% {
+		opacity: 0.3;
+	}
+	38% {
+		opacity: 1;
+	}
+	40% {
+		opacity: 1;
+	}
+	42% {
+		opacity: 1;
+	}
+	44% {
+		opacity: 0.5;
+	}
+	46% {
+		opacity: 0.5;
+	}
+	56% {
+		opacity: 0.5;
+	}
+	58% {
+		opacity: 0.75;
+	}
+	60% {
+		opacity: 0.5;
+	}
+	68% {
+		opacity: 0.1;
+	}
+	70% {
+		opacity: 1; /*peak*/
+	}
+	72% {
+		opacity: 1;
+	}
+	93% {
+		opacity: 0.5;
+	}
+	95% {
+		opacity: 1; /*peak*/
+	}
+	97% {
+		opacity: 0.5;
+	}
+	to {
+		opacity: 0.6;
+	}
+}
+
+/*==================================
+=            FLICKER ON            =
+==================================*/
+
+@-webkit-keyframes flickeron {
+	from {
+		opacity: 1;
+	}
+	10% {
+		opacity: 0;
+	}
+	20% {
+		opacity: 0;
+	}
+	30% {
+		opacity: 8.5;
+	}
+	40% {
+		opacity: 0;
+	}
+	50% {
+		opacity: 5.6;
+	}
+	60% {
+		opacity: 1;
+	}
+	70% {
+		opacity: 1;
+	}
+	80% {
+		opacity: 1;
+	}
+	90% {
+		opacity: 0;
+	}
+	to {
+		opacity: 1;
+	}
+}
+
+@keyframes flickeron {
+	from {
+		opacity: 1;
+	}
+	10% {
+		opacity: 0;
+	}
+	20% {
+		opacity: 0;
+	}
+	30% {
+		opacity: 8.5;
+	}
+	40% {
+		opacity: 0;
+	}
+	50% {
+		opacity: 5.6;
+	}
+	60% {
+		opacity: 1;
+	}
+	70% {
+		opacity: 1;
+	}
+	80% {
+		opacity: 1;
+	}
+	90% {
+		opacity: 0;
+	}
+	to {
+		opacity: 1;
+	}
+}
+
+
+/*==================================
+=            FLICKER ON            =
+==================================*/
+
+@-webkit-keyframes flickeron-alt {
+	from {
+		opacity: 1;
+	}
+	10% {
+		opacity: 0;
+	}
+	20% {
+		opacity: 0;
+	}
+	30% {
+		opacity: 0;
+	}
+	40% {
+		opacity: 0;
+	}
+	50% {
+		opacity: 5.6;
+	}
+	60% {
+		opacity: 1;
+	}
+	70% {
+		opacity: 1;
+	}
+	80% {
+		opacity: 1;
+	}
+	90% {
+		opacity: 1;
+	}
+	to {
+		opacity: 1;
+	}
+}
