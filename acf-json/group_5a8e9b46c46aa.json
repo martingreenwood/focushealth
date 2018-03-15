@@ -100,6 +100,11 @@
                 "param": "post_type",
                 "operator": "==",
                 "value": "page"
+            },
+            {
+                "param": "post_template",
+                "operator": "!=",
+                "value": "page-no-header.php"
             }
         ]
     ],
@@ -111,5 +116,5 @@
     "hide_on_screen": "",
     "active": 1,
     "description": "",
-    "modified": 1519316690
+    "modified": 1521118879
 }
