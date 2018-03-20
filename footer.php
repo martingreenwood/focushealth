@@ -54,11 +54,6 @@
 							</a>
 						</li>
 						<li>
-							<a target="_blank" href="<?php the_field( 'youtube', 'options' ); ?>">
-								<i class="fab fa-youtube"></i>
-							</a>
-						</li>
-						<li>
 							<a target="_blank" href="<?php the_field( 'facebook', 'options' ); ?>">
 								<i class="fab fa-facebook-f"></i>
 							</a>
